@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+<title>CLimate issue</title>
+</head>
+<body>
 
-        <title>lol</title>
-    </head>
-    <body>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
-    <h1>Captures of fragments in time</h1>
-    
-    </body>
+</body>
 </html>
