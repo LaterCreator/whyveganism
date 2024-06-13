@@ -1,12 +1,12 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>CLimate issue</title>
 </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<h1>This is just a list of useful statistics for now/h1>
+  
+<h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
+
 
 </body>
 </html>
