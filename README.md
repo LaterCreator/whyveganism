@@ -3,8 +3,12 @@
 </head>
 <body>
 
-<h1>This is just a list of useful statistics for now</h1>
-  
+<h1>Life cycle of animals in the industry of animal exploitation</h1>
+
+<h2>chicken</h2>
+
+<h1>Impacts of animal agriculture on climate change</h1>
+
 <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
 
 <a href="https://informationisbeautiful.net/visualizations/how-many-gigatons-of-co2/">CO2-Statistics</a>
@@ -24,3 +28,25 @@
 </p>
 
 
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
