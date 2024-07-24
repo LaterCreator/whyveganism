@@ -67,7 +67,7 @@
 <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
 
 <br><a href="https://informationisbeautiful.net/visualizations/how-many-gigatons-of-co2/" target="_blank" rel="noopener noreferrer">CO2-Statistics</a><br>
-
+<br><br>
 <h2>What other greenhouse gases exist and what is their GWP? <strong>(Global Warming Potential</strong></h2>
 <p>Methane's instantenous GWP is 120 times greater than that of CO2! Since oceans obviously store heat, it's important to remember.</p>
 
