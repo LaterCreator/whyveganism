@@ -76,10 +76,10 @@
 <br><a href="https://ourworldindata.org/greenhouse-gas-emissions" target="_blank" rel="noopener noreferrer">Grennhouse gases comparison</a><br>
 
 
-<h2>If CO2 stays in the atmosphere for potentially thousands of years and we are running out of time, what can we do?</h2>
+<h2>If CO2 stays in the atmosphere for potentially thousands of years and we are emitting more CO2 every year, what can we do?</h2>
 
-<p>Now I just want to clarify that I am not a specialist, I do not know everything, well I probably know very little considering the amount of data available. But I do know one thing: <strong>We need time</strong><br>
-<br>To understand how we obtain more time there are some important facts to know. Maybe you already know them, maybe you don't but here they are nonetheless<br>
+<p>Now I just want to clarify that I am not a specialist, I do not know everything, well I probably know very little considering the amount of data available. I am just a random guy who is concerned about his future, his friends' and family's future, and, in essence, the future of all life on this planet.<p>
+<br>So you mgiht ask: what can you and I do about a most likely catastrphic future? Are you the kind of person that puts their trust in the people in power (politicans, large corporations, shady governmental instiutions, etc.)? Or do you look at it with sceptisism and desire for finding out what you can do right now to do your part in the most important socail movement of human history? It is important to realize that the industry is only destroying the planet, because of an accumulation of individual decisions. More comfort, faster everything, better everything, shinier everything, consume, consume, consume. It would be inconceivable to even bring up the thought of consequences, cause that might reduce the profit. Corporations need that number to go up, no matter the cost, no matter what. While I am on my ramble let me bring up maybe the worst corporation of all: <strong>nestle</strong> 5 of the probably worst things nestle has done: No.1: Causing the death of millions of infants. No.2: Child slave labor. No.3: Exploiting drought ridden areas to make a profit (California). No.4: Plastic pollution. (Their solution to this is to burn the plastic, nothing can go wrong when you do that am I right). No.5: Exploiting drought ridden areas (Pakistan) to not only make a profit, but also wasting half the water and contaminating the ground water. Great job Nestle! So how is it possible that Nestle still exists and is one of the biggest corporations in europe? Because the consequences aren't shown, furthermore they are doing everything they can to fix their image.  <br>
 </p>
   </div>
 
