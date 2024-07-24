@@ -68,10 +68,11 @@
 
 <a href="https://informationisbeautiful.net/visualizations/how-many-gigatons-of-co2/" target="_blank" rel="noopener noreferrer">CO2-Statistics</a>
 
-<h2>What other greenhouse gases exist and what is their GWP? <strong>(Global Warming Potential</strong></h2>
+<br><h2>What other greenhouse gases exist and what is their GWP? <strong>(Global Warming Potential</strong></h2><br>
 <p>Methane's instantenous GWP is 120 times greater than that of CO2! Since oceans obviously store heat, it's important to remember.</p>
 
 <a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's GWP</a>
+
 <br><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a><br>
 <br><a href="https://ourworldindata.org/greenhouse-gas-emissions" target="_blank" rel="noopener noreferrer">Grennhouse gases comparison</a><br>
 
