@@ -53,10 +53,9 @@
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
     <p>
-[![Watch the video](https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg)](https://www.youtube.com/embed/APOPm01BVrk)
-
-[<img src="https://img.youtube.com/vi/APOPm01BVrk/hqdefault.jpg" width="600" height="300"
-/>](https://youtu.be/ducNprM1c2w)
+<body>
+  [![Alt text for your video](doc/gifName.gif)](https://youtu.be/ducNprM1c2w)
+  <body>
     </p>
   </div>
 
