@@ -53,9 +53,7 @@
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
     <p>
-<body>
-  [![Alt text for your video](doc/gifName.gif)](https://youtu.be/ducNprM1c2w)
-  <body>
+
     </p>
   </div>
 
