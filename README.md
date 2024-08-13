@@ -53,10 +53,8 @@
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
     <p>
-   <video width="320" height="240" controls>
-  <source src="https://www.youtube.com/watch?v=ducNprM1c2w" type="URL">
-  Your browser does not support the video tag.
-</video>
+</video>](https://www.youtube.com/watch?v=ducNprM1c2w=<VIDEO ID>
+https://youtu.be/<VIDEO ID>)
     </p>
   </div>
 
