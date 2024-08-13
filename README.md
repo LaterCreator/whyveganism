@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabbed Interface</title>
-   <title>Embed YouTube Video</title>
+  <title>Embed Google Drive Video</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -55,13 +55,12 @@
     <h2>Ethical Reasons</h2>
     <p>
 <body>
-    <h1>Watch This YouTube Video</h1>
+    <h1>Watch This Google Drive Video</h1>
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
         <iframe 
-            src="https://www.youtube.com/embed/ducNprM1c2w" 
+            src="https://drive.google.com/file/d/10MlLNRlz9zP5_RZ1Uy1MvooM33GHfHgd/preview" 
             frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
+            allowfullscreen 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
