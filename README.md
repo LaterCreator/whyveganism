@@ -53,14 +53,10 @@
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
     <p>
-   <body style="text-align: center">
-    <h2>I love cheese too much</h2>
-    <video width="320" height="240" controls>
-  <source src="https://drive.google.com/file/d/10MlLNRlz9zP5_RZ1Uy1MvooM33GHfHgd/view?usp=sharing" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
+   <video width="320" height="240" controls>
+  <source src="https://drive.google.com/file/d/10MlLNRlz9zP5_RZ1Uy1MvooM33GHfHgd/view?usp=drive_link" type="URL">
   Your browser does not support the video tag.
 </video>
-</body>
     </p>
   </div>
 
