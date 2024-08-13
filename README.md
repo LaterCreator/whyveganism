@@ -54,7 +54,7 @@
     <h2>Ethical Reasons</h2>
     <p>
    <video width="320" height="240" controls>
-  <source src="https://drive.google.com/file/d/10MlLNRlz9zP5_RZ1Uy1MvooM33GHfHgd/view?usp=drive_link" type="URL">
+  <source src="https://www.youtube.com/watch?v=ducNprM1c2w" type="URL">
   Your browser does not support the video tag.
 </video>
     </p>
