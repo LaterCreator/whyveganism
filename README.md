@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabbed Interface</title>
+   <title>Embed YouTube Video</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,7 +54,18 @@
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
     <p>
-
+<body>
+    <h1>Watch This YouTube Video</h1>
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+        <iframe 
+            src="https://www.youtube.com/embed/ducNprM1c2w" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
+</body>
     </p>
   </div>
 
