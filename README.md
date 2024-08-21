@@ -64,13 +64,29 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
+  <h1>Eggs</h1>
+  <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+        <iframe 
+            src="https://drive.google.com/file/d/1X5zYk6hZIfOdSpOPTRcgvBhmoI2NGfcT/preview" 
+            frameborder="0" 
+            allowfullscreen 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
 </body>
     </p>
   </div>
 
   <div id="Health" class="tab-content">
     <h2>Health Reasons</h2>
-    <p>Here are some health reasons...</p>
+    <p>
+    <h1>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it greatly health-wise. I remember a time where I tried to become more fit and kept track of my caloric intake. At that time I wasn't consuming dairy products any longer, just organic eggs, I was naive thinking that "organic" meant that they had amazing lives, full of freedom, especially that of suffering. This is not the case, it is a simple ploy by the animal industry to trick you into continuing to purchase their products of animal expolitation. So there I was, eating 3 eggs a day for my breakfast, thinking I was nourishing my body in a way that represents its needs and optimal health. Unbeknownst to me, I was bombarding my body with saturated fats as well as huge amounts of cholesterol<sup><a href="#ref1">1</a></sup>. Almost every morning I was left with stomach aches, sometimes thinking I hadn't cooked the eggs correctly, it was the same with my consumption of dairy<sup><a href="#ref1">1</a></sup>. Ever since I've solely consumed plants, I have felt a stabilisation of my energy levels, a complete evisceration of stomach pains and an overall better mood, well apart from the realisation that you are now a misanthrope :P
+    <br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a><br>
+    <br><a href="https://med.stanford.edu/news/all-news/2023/11/twin-diet-vegan-cardiovascular.html" target="_blank" rel="noopener noreferrer">twin study</a><br>
+    id="ref1"<br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs" target="_blank" rel="noopener noreferrer">Eggs</a><br> 
+    id="ref2"<br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy" target="_blank" rel="noopener noreferrer">Dairy</a><br> 
+    </p>
+    
   </div>
 
   <div id="Sustainability" class="tab-content">
