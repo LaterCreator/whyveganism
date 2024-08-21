@@ -87,6 +87,7 @@
     <br><a href="https://med.stanford.edu/news/all-news/2023/11/twin-diet-vegan-cardiovascular.html" target="_blank" rel="noopener noreferrer">twin study</a><br>
     <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs" target="_blank" rel="noopener noreferrer">Eggs</a><br> 
     <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy" target="_blank" rel="noopener noreferrer">Dairy</a><br> 
+    </p>
 
 
   <div id="Sustainability" class="tab-content">
