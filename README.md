@@ -90,11 +90,10 @@
 
 
   <div id="Sustainability" class="tab-content">
-  
-    
-<h2>Sustainability Reasons</h2>
-   
-<p><h1>Impacts of animal agriculture on climate change</h1>
+  <h2>Sustainability Reasons</h2>
+<p>
+<body>
+<h1>Impacts of animal agriculture on climate change</h1>
 
 <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
 
@@ -114,6 +113,7 @@
 We need time, time to reduce the emissions, time to change our societies, time to adapt. This time can be gained by simply abstaining from animal products that hurt you, the planet and most importantly the victims.
 
 <br>What can you and I do about a most likely catastrphic future? Are you the kind of person that puts their trust in the people in power (politicans, large corporations, shady governmental instiutions, etc.)? Or do you look at it with sceptisism and desire for finding out what you can do right now to do your part in the most important socail movement of human history? It is important to realize that the industry is only destroying the planet, because of an accumulation of individual decisions. More comfort, faster everything, better everything, shinier everything, consume, consume, consume. It would be inconceivable to even bring up the thought of consequences, cause that might reduce the profit. Corporations need that number to go up, no matter the cost, no matter what. While I am on my ramble let me bring up maybe the worst corporation of all: <strong>nestle</strong> 5 of the probably worst things nestle has done: No.1: Causing the death of millions of infants. No.2: Child slave labor. No.3: Exploiting drought ridden areas to make a profit (California). No.4: Plastic pollution. (Their solution to this is to burn the plastic, nothing can go wrong when you do that am I right). No.5: Exploiting drought ridden areas (Pakistan) to not only make a profit, but also wasting half the water and contaminating the ground water. Great job Nestle! So how is it possible that Nestle still exists and is to this day one of the biggest corporations in europe? <strong>Manipulation :)<strong><br>
+</body>
 </p>
 
   <script>
