@@ -79,21 +79,21 @@
 
   <div id="Health" class="tab-content">
   <h2>Health Reasons</h2>
-   <p>
-  <body>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it greatly health-wise. I remember a time where I tried to become more fit and kept track of my caloric intake. At that time I wasn't consuming dairy products any longer, just organic eggs, I was naive thinking that "organic" meant that they had amazing lives, full of freedom, especially free of suffering. This is not the case, it is a simple ploy by the animal industry to trick you into continuing to purchase their products of animal expolitation. So there I was, eating 3 eggs a day for my breakfast, thinking I was nourishing my body in a way that represents its needs and optimal health. Unbeknownst to me, I was bombarding my body with saturated fats as well as huge amounts of cholesterol. Almost every morning I was left with stomach aches, sometimes thinking I hadn't cooked the eggs correctly, it was the same with my consumption of dairy. Ever since I've solely consumed plants, I have felt a stabilisation of my energy levels, a complete evisceration of stomach pains and an overall better mood, well apart from the realisation that I was now a misanthrope
+   <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it greatly health-wise. I remember a time where I tried to become more fit and kept track of my caloric intake. At that time I wasn't consuming dairy products any longer, just organic eggs, I was naive thinking that "organic" meant that they had amazing lives, full of freedom, especially free of suffering. This is not the case, it is a simple ploy by the animal industry to trick you into continuing to purchase their products of animal expolitation. So there I was, eating 3 eggs a day for my breakfast, thinking I was nourishing my body in a way that represents its needs and optimal health. Unbeknownst to me, I was bombarding my body with saturated fats as well as huge amounts of cholesterol. Almost every morning I was left with stomach aches, sometimes thinking I hadn't cooked the eggs correctly, it was the same with my consumption of dairy. Ever since I've solely consumed plants, I have felt a stabilisation of my energy levels, a complete evisceration of stomach pains and an overall better mood, well apart from the realisation that I was now a misanthrope</p>
 
    <br><h1>Sources:<h1><br>
-    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a>
+   <ul>
+    <br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a><br>
     <br><a href="https://med.stanford.edu/news/all-news/2023/11/twin-diet-vegan-cardiovascular.html" target="_blank" rel="noopener noreferrer">twin study</a><br>
     <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs" target="_blank" rel="noopener noreferrer">Eggs</a><br> 
     <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy" target="_blank" rel="noopener noreferrer">Dairy</a><br>
+    </ul>
 
 
  
 <div id="Sustainability" class="tab-content">  
 <h2>Sustainability Reasons</h2>
 <p>
-<body>
 <h1>Impacts of animal agriculture on climate change</h1>
 
 <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
@@ -101,7 +101,7 @@
 <br><a href="https://informationisbeautiful.net/visualizations/how-many-gigatons-of-co2/" target="_blank" rel="noopener noreferrer">CO2-Statistics</a><br>
 <br><br>
 <h2>What other greenhouse gases exist and what is their GWP? <strong>(Global Warming Potential</strong></h2>
-<p>Methane's instantenous GWP is 120 times greater than that of CO2! Since oceans obviously store heat, it's important to remember.</p>
+Methane's instantenous GWP is 120 times greater than that of CO2! Since oceans obviously store heat, it's important to remember.
 
 <br><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's GWP</a><br>
 
@@ -113,7 +113,7 @@
 
 We need time, time to reduce the emissions, time to change our societies, time to adapt. This time can be gained by simply abstaining from animal products that hurt you, the planet and most importantly the victims.
 
-<br>What can you and I do about a most likely catastrphic future? Are you the kind of person that puts their trust in the people in power (politicans, large corporations, shady governmental instiutions, etc.)? Or do you look at it with sceptisism and desire for finding out what you can do right now to do your part in the most important socail movement of human history? It is important to realize that the industry is only destroying the planet, because of an accumulation of individual decisions. More comfort, faster everything, better everything, shinier everything, consume, consume, consume. It would be inconceivable to even bring up the thought of consequences, cause that might reduce the profit. Corporations need that number to go up, no matter the cost, no matter what. While I am on my ramble let me bring up maybe the worst corporation of all: <strong>nestle</strong> 5 of the probably worst things nestle has done: No.1: Causing the death of millions of infants. No.2: Child slave labor. No.3: Exploiting drought ridden areas to make a profit (California). No.4: Plastic pollution. (Their solution to this is to burn the plastic, nothing can go wrong when you do that am I right). No.5: Exploiting drought ridden areas (Pakistan) to not only make a profit, but also wasting half the water and contaminating the ground water. Great job Nestle! So how is it possible that Nestle still exists and is to this day one of the biggest corporations in europe? <strong>Manipulation :)<strong><br></div>
+<br>What can you and I do about a most likely catastrphic future? Are you the kind of person that puts their trust in the people in power (politicans, large corporations, shady governmental instiutions, etc.)? Or do you look at it with sceptisism and desire for finding out what you can do right now to do your part in the most important socail movement of human history? It is important to realize that the industry is only destroying the planet, because of an accumulation of individual decisions. More comfort, faster everything, better everything, shinier everything, consume, consume, consume. It would be inconceivable to even bring up the thought of consequences, cause that might reduce the profit. Corporations need that number to go up, no matter the cost, no matter what. While I am on my ramble let me bring up maybe the worst corporation of all: <strong>nestle</strong> 5 of the probably worst things nestle has done: No.1: Causing the death of millions of infants. No.2: Child slave labor. No.3: Exploiting drought ridden areas to make a profit (California). No.4: Plastic pollution. (Their solution to this is to burn the plastic, nothing can go wrong when you do that am I right). No.5: Exploiting drought ridden areas (Pakistan) to not only make a profit, but also wasting half the water and contaminating the ground water. Great job Nestle! So how is it possible that Nestle still exists and is to this day one of the biggest corporations in europe? <strong>Manipulation :)<strong><br></p>
 
 
   <script>
