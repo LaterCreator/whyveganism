@@ -1,9 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabbed Interface</title>
-  <title>Embed Google Drive Video</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,8 +53,6 @@
 
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
-    <p>
-    <body>
     <h1>Dairy</h1>
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
         <iframe 
@@ -64,8 +62,8 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
-  <h1>Eggs</h1>
-  <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+    <h1>Eggs</h1>
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
         <iframe 
             src="https://drive.google.com/file/d/1X5zYk6hZIfOdSpOPTRcgvBhmoI2NGfcT/preview" 
             frameborder="0" 
@@ -73,25 +71,22 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
-</body>
-    </p>
   </div>
 
   <div id="Health" class="tab-content">
-  <h2>Health Reasons</h2>
-   <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it greatly health-wise. I remember a time where I tried to become more fit and kept track of my caloric intake. At that time I wasn't consuming dairy products any longer, just organic eggs, I was naive thinking that "organic" meant that they had amazing lives, full of freedom, especially free of suffering. This is not the case, it is a simple ploy by the animal industry to trick you into continuing to purchase their products of animal expolitation. So there I was, eating 3 eggs a day for my breakfast, thinking I was nourishing my body in a way that represents its needs and optimal health. Unbeknownst to me, I was bombarding my body with saturated fats as well as huge amounts of cholesterol. Almost every morning I was left with stomach aches, sometimes thinking I hadn't cooked the eggs correctly, it was the same with my consumption of dairy. Ever since I've solely consumed plants, I have felt a stabilisation of my energy levels, a complete evisceration of stomach pains and an overall better mood, well apart from the realisation that I was now a misanthrope</p>
+    <h2>Health Reasons</h2>
+    <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it greatly health-wise. I remember a time where I tried to become more fit and kept track of my caloric intake. At that time I wasn't consuming dairy products any longer, just organic eggs, I was naive thinking that "organic" meant that they had amazing lives, full of freedom, especially free of suffering. This is not the case, it is a simple ploy by the animal industry to trick you into continuing to purchase their products of animal exploitation. So there I was, eating 3 eggs a day for my breakfast, thinking I was nourishing my body in a way that represents its needs and optimal health. Unbeknownst to me, I was bombarding my body with saturated fats as well as huge amounts of cholesterol. Almost every morning I was left with stomach aches, sometimes thinking I hadn't cooked the eggs correctly, it was the same with my consumption of dairy. Ever since I've solely consumed plants, I have felt a stabilization of my energy levels, a complete evisceration of stomach pains, and an overall better mood, well apart from the realization that I was now a misanthrope.</p>
 
-   <br><h1>Sources:<h1><br>
-   <ul>
-    <br><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a><br>
-    <br><a href="https://med.stanford.edu/news/all-news/2023/11/twin-diet-vegan-cardiovascular.html" target="_blank" rel="noopener noreferrer">twin study</a><br>
-    <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs" target="_blank" rel="noopener noreferrer">Eggs</a><br> 
-    <br><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy" target="_blank" rel="noopener noreferrer">Dairy</a><br>
+    <h1>Sources:</h1>
+    <ul>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a></li>
+      <li><a href="https://med.stanford.edu/news/all-news/2023/11/twin-diet-vegan-cardiovascular.html" target="_blank" rel="noopener noreferrer">Twin study</a></li>
+      <li><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-with-eggs" target="_blank" rel="noopener noreferrer">Eggs</a></li>
+      <li><a href="https://www.pcrm.org/good-nutrition/nutrition-information/health-concerns-about-dairy" target="_blank" rel="noopener noreferrer">Dairy</a></li>
     </ul>
+  </div>
 
-
- 
-<div id="Sustainability" class="tab-content">  
+  <div id="Sustainability" class="tab-content">  
     <h2>Sustainability Reasons</h2>
 
     <h1>Impacts of animal agriculture on climate change</h1>
@@ -127,8 +122,7 @@
     <p>
         Great job, Nestle! So how is it possible that Nestle still exists and is to this day one of the biggest corporations in Europe? <strong>Manipulation :)</strong>
     </p>
-</div>
-
+  </div>
 
   <script>
     function openTab(evt, tabName) {
@@ -152,8 +146,10 @@
       evt.currentTarget.className += " active";
     }
 
-    // By default, open the first tab
+    // Simulate a click on the first tab button to display the first tab by default
     document.addEventListener("DOMContentLoaded", function() {
-      document.querySelector('.tab-button').click();
+      document.querySelector(".tab-button").click();
     });
   </script>
+</body>
+</html>
