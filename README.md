@@ -61,10 +61,10 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
-    <br><p>This is dairy, a heartless, maniacal way of treating literal babies. This is animal agriculture. The worst life you can born into is one within that industry. Trapped and exploited your entire life until you are mercilessly killed.<p/>
-      <ul>
+    <br><p>This is dairy, a heartless, maniacal way of treating literal babies. This is animal agriculture. The worst life you can born into is one within that industry. Trapped and exploited your entire life until you are mercilessly killed.</p>
+    <ul>
       <li><a href="https://www.kinderworld.org/videos/dairy-industry/shooting-baby-calves-dairy-horrors/" target="_blank" rel="noopener norefferrer">Horrific</a></li>
-      </ul>
+    </ul>
     <h1>Eggs</h1>
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
         <iframe 
@@ -74,10 +74,11 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
-  </div>
+  </div> <!-- Closed div for Ethical Reasons -->
+
   <div id="Health" class="tab-content">
     <h2>Health Reasons</h2>
-    <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it health-wise</p>
+    <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it health-wise.</p>
 
     <h1>Sources:</h1>
     <ul>
@@ -153,4 +154,5 @@
       document.querySelector(".tab-button").click();
     });
   </script>
-
+</body>
+</html>
