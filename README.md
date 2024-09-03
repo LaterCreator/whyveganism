@@ -62,8 +62,9 @@
         </iframe>
     </div>
     <br><p>This is dairy, a heartless, maniacal way of treating literal babies. This is animal agriculture. The worst life you can born into is one within that industry. Trapped and exploited your entire life until you are mercilessly killed.</p>
-    <ul>
-      <li><a href="https://www.kinderworld.org/videos/dairy-industry/shooting-baby-calves-dairy-horrors/" target="_blank" rel="noopener norefferrer">Horrific</a></li>
+     <ul>
+   <li><a href="https://animalsaustralia.org/our-work/farmed-animals/what-happens-to-dairy-calves/" target="_blank" rel="noopener noreferrer">Dairy</a></li>
+    <li><a href="https://www.kinderworld.org/videos/dairy-industry/shooting-baby-calves-dairy-horrors/" target="_blank" rel="noopener norefferrer">Horrific</a></li>
     </ul>
     <h1>Eggs</h1>
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
