@@ -99,7 +99,8 @@
 
 <p>Animal agriculture is one of the main driver's of climate change, the impact of that industry on the planet's health is often downplayed, because the industry has such far reaching power and influence on every level of society, but especially politics. Here I would just like to recommend a really great documentary that helped me understand this issue much better: <a href="https://www.youtube.com/watch?v=LaPge01NQTQ"_blank" rel="noopener noreferrer">Eating to extinction</a></p>
 
-<br><p>To get a grasp on the full impact of this industry on the climate there are multiple important factors to take into consideration. I highlighted Methanes instantenous GWP, because using methanes impact over a 100 year scale takes away its actual impact. The oceans store heat so the immediate impact this gas has is essential. 
+<br><p>To get a grasp on the full impact of this industry on the climate there are multiple important factors to take into consideration. I highlighted Methanes instantenous GWP, because using methanes impact over a 100 year scale takes away its actual impact. The oceans store heat so the immediate impact this gas has is essential.</p>
+<p>These are the ressources I can recommend:</p>
 <br><strong><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's instantenous GWP</a></strong> 
 <br><strong><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a></strong> 
 <br><strong><a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">Carbon opportunity cost of food</a></strong>
