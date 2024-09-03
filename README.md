@@ -105,11 +105,11 @@
 
 <br><p>To get a grasp on the full impact of this industry on the climate there are multiple important factors to take into consideration. I highlighted Methanes instantenous GWP, because using methanes impact over a 100 year scale takes away its actual impact. The oceans store heat so the immediate impact this gas has is essential.</p>
 <p>These are the ressources I can recommend:</p>
-<br><strong><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's instantenous GWP</a></strong> 
-<br><strong><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a></strong> 
-<br><strong><a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">Carbon opportunity cost of food</a></strong>
-<br><strong><a href="https://ourworldindata.org/agricultural-land-by-global-diets#:~:text=Livestock%20takes%20up%20nearly%2080,required%20to%20produce%20our%20food." target="_blank" rel="noopener noreferrer">Where do humans get most of their calories?</a></strong>
-<br><strong><a href="https://www.surgeactivism.org/animalagsubsidiesexplained" target="_blank" rel="noopener noreferrer">how are animal prodcuts so cheap?</a></strong>
+<br><strong><li><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's instantenous GWP</a></strong></li>
+<br><strong><li><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a></strong></li>
+<br><strong><li><a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">Carbon opportunity cost of food</a></li></strong>
+<br><strong><li><a href="https://ourworldindata.org/agricultural-land-by-global-diets#:~:text=Livestock%20takes%20up%20nearly%2080,required%20to%20produce%20our%20food." target="_blank" rel="noopener noreferrer">Where do humans get most of their calories?</a></li></strong>
+<br><strong><li><a href="https://www.surgeactivism.org/animalagsubsidiesexplained" target="_blank" rel="noopener noreferrer">how are animal prodcuts so cheap?</a></li></strong>
 
 
     <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
