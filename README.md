@@ -99,12 +99,11 @@
 
 <p>Animal agriculture is one of the main driver's of climate change, the impact of that industry on the planet's health is often downplayed, because the industry has such far reaching power and influence on every level of society, but especially politics. Here I would just like to recommend a really great documentary that helped me understand this issue much better: <a href="https://www.youtube.com/watch?v=LaPge01NQTQ"_blank" rel="noopener noreferrer">Eating to extinction</a></p>
 
-<br><p>To get a grasp on the full impact of this industry on the climate there are multiple important factors to take into consideration. I highlighted Methanes instantenous GWP, because using methanes impact over a 100 year scale takes away its actual impact. The oceans store heat so the immediate impact this gas has is essential.
-<strong></strong>   
-<strong><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's instantenous GWP</a></strong> 
-<strong><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a></strong> 
-<strong><a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">Carbon opportunity cost of food</a>
-<strong><a href="https://ourworldindata.org/agricultural-land-by-global-diets#:~:text=Livestock%20takes%20up%20nearly%2080,required%20to%20produce%20our%20food." target="_blank" rel="noopener noreferrer">Where do humans get most of their calories?</a>
+<br><p>To get a grasp on the full impact of this industry on the climate there are multiple important factors to take into consideration. I highlighted Methanes instantenous GWP, because using methanes impact over a 100 year scale takes away its actual impact. The oceans store heat so the immediate impact this gas has is essential. 
+<br><strong><a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's instantenous GWP</a></strong> 
+<br><strong><a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a></strong> 
+<br><strong><a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">Carbon opportunity cost of food</a>
+<br><strong><a href="https://ourworldindata.org/agricultural-land-by-global-diets#:~:text=Livestock%20takes%20up%20nearly%2080,required%20to%20produce%20our%20food." target="_blank" rel="noopener noreferrer">Where do humans get most of their calories?</a>
 
     <h2>How much CO2 has already been released, how much is released a year and what are the planet's reserves?</h2>
     <p>
@@ -114,8 +113,8 @@
     <h2>What greenhouse gases exist, what is their GWP and what are the causes? <strong>(Global Warming Potential)</strong></h2>
   
     <p>     
- <a href="https://ourworldindata.org/emissions-by-sector#agriculture-forestry-and-land-use-18-4"_blank" rel="noopener noreferrer">Greenhouse gases by sector</a>  
-<a href="https://ourworldindata.org/greenhouse-gas-emissions" target="_blank" rel="noopener noreferrer">Greenhouse gases comparison</a>
+<br><a href="https://ourworldindata.org/emissions-by-sector#agriculture-forestry-and-land-use-18-4" target="_blank" rel="noopener noreferrer">Emissions by sector</a>
+<br><a href="https://ourworldindata.org/greenhouse-gas-emissions" target="_blank" rel="noopener noreferrer">Greenhouse gases comparison</a>
     </p>
 
     <h2>If CO2 stays in the atmosphere for potentially thousands of years and we are emitting more CO2 every year, what can we do?</h2>
