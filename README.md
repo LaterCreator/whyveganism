@@ -61,7 +61,7 @@
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
         </iframe>
     </div>
-    <br><p>This is dairy, a heartless, maniacal way of treating literal babies. This is animal agriculture. The worst life you can born into is one within that industry. Trapped and exploited your entire life until you are mercilessly killed.</p>
+    <br><p>This is dairy, a heartless, maniacal way of treating literal babies. This is animal agriculture. The worst life you can be born into is one within that industry. Trapped and exploited your entire life until you are mercilessly killed.</p>
      <ul>
    <li><a href="https://animalsaustralia.org/our-work/farmed-animals/what-happens-to-dairy-calves/" target="_blank" rel="noopener noreferrer">Dairy</a></li>
     <li><a href="https://www.kinderworld.org/videos/dairy-industry/shooting-baby-calves-dairy-horrors/" target="_blank" rel="noopener norefferrer">Horrific</a></li>
