@@ -3,44 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabbed Interface with Dropdown</title>
+  <title>Dropdown Menu Interface</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin-top: 20px;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
-    /* Plant button */
-    .plant-button {
-      background-color: transparent;
-      background-image: url('https://example.com/plant-icon.png'); /* Replace with actual plant icon URL */
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 50px;
+    /* Dropdown button styling */
+    .dropdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dropdown-button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
       border: none;
       cursor: pointer;
-      margin-bottom: 20px;
+      border-radius: 5px;
     }
 
     /* Dropdown menu styling */
     .dropdown-menu {
       display: none; /* Hidden by default */
       position: absolute;
-      top: 80px; /* Adjusts the position below the button */
+      top: 50px;
+      right: 20px;
       background-color: #f9f9f9;
-      border: 1px solid #ccc;
-      border-radius: 5px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
       z-index: 1;
     }
 
     /* Dropdown items */
     .dropdown-menu button {
-      display: block;
       width: 100%;
       padding: 12px 16px;
       font-size: 16px;
@@ -64,6 +71,7 @@
       border-radius: 5px;
       width: 80%;
       margin-top: 20px;
+      text-align: left;
     }
 
     .tab-content h2 {
@@ -72,36 +80,43 @@
   </style>
 </head>
 <body>
-  <!-- Plant button that triggers dropdown -->
-  <button class="plant-button" onclick="toggleDropdown()"></button>
 
-  <!-- Dropdown menu with options -->
-  <div class="dropdown-menu" id="dropdownMenu">
-    <button onclick="openTab('Ethical')">Ethical Reasons</button>
-    <button onclick="openTab('Health')">Health Reasons</button>
-    <button onclick="openTab('Sustainability')">Sustainability Reasons</button>
-    <button onclick="openTab('Activism')">How to Become an Activist</button>
+  <!-- Dropdown menu button -->
+  <div class="dropdown">
+    <button class="dropdown-button" onclick="toggleDropdown()">Menu</button>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <button onclick="openTab('Home')">Home</button>
+      <button onclick="openTab('Ethics')">Ethics</button>
+      <button onclick="openTab('Health')">Health</button>
+      <button onclick="openTab('Sustainability')">Sustainability</button>
+      <button onclick="openTab('Activism')">How to Activism</button>
+    </div>
   </div>
 
   <!-- Tab content sections -->
-  <div id="Ethical" class="tab-content">
-    <h2>Ethical Reasons</h2>
-    <p>Content about ethical reasons...</p>
+  <div id="Home" class="tab-content">
+    <h2>Home</h2>
+    <p>Welcome to the home section. This is the main overview of the site.</p>
+  </div>
+
+  <div id="Ethics" class="tab-content">
+    <h2>Ethics</h2>
+    <p>Content about ethical reasons for going vegan or plant-based.</p>
   </div>
 
   <div id="Health" class="tab-content">
-    <h2>Health Reasons</h2>
-    <p>Content about health reasons...</p>
+    <h2>Health</h2>
+    <p>Health benefits of adopting a vegan or plant-based lifestyle.</p>
   </div>
 
   <div id="Sustainability" class="tab-content">
-    <h2>Sustainability Reasons</h2>
-    <p>Content about sustainability reasons...</p>
+    <h2>Sustainability</h2>
+    <p>Information on sustainability and environmental impact of plant-based diets.</p>
   </div>
 
   <div id="Activism" class="tab-content">
-    <h2>How to Become an Activist</h2>
-    <p>Content about activism...</p>
+    <h2>How to Activism</h2>
+    <p>Ways to get involved in activism for the plant-based and vegan movement.</p>
   </div>
 
   <script>
@@ -124,12 +139,12 @@
       document.getElementById(tabName).style.display = "block";
     }
 
-    // Close the dropdown if user clicks outside
+    // Close the dropdown if the user clicks outside
     document.addEventListener("click", function(event) {
       const dropdown = document.getElementById("dropdownMenu");
-      const plantButton = document.querySelector(".plant-button");
+      const dropdownButton = document.querySelector(".dropdown-button");
 
-      if (!dropdown.contains(event.target) && event.target !== plantButton) {
+      if (!dropdown.contains(event.target) && event.target !== dropdownButton) {
         dropdown.style.display = "none";
       }
     });
