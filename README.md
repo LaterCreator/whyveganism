@@ -10,37 +10,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 20px;
     }
 
+    /* Plant button */
     .plant-button {
       background-color: transparent;
-      background-image ('[https://imgs.search.brave.com/1OjHTKaILaXkxp7qI7oJkFasa5NsFKd1KhdgqCpKCA4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzQ4LzY4Lzc4/LzM2MF9GXzU0ODY4/NzgyNF9LV3pjSW1U/QnNxenBWakdRdUEz/SjZuRW1nYW5tWnly/WC5qcGc]')
-      background-size: contain;
+      background-image: url('https://example.com/plant-icon.png'); /* Replace with actual plant icon URL */
+      background-size: cover;
       background-repeat: no-repeat;
       width: 50px;
       height: 50px;
       border: none;
       cursor: pointer;
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
+    /* Dropdown menu styling */
     .dropdown-menu {
-      display: none;
+      display: none; /* Hidden by default */
       position: absolute;
-      top: 80px; /* Position below the plant button */
+      top: 80px; /* Adjusts the position below the button */
       background-color: #f9f9f9;
       border: 1px solid #ccc;
-      padding: 10px;
       border-radius: 5px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       z-index: 1;
     }
 
+    /* Dropdown items */
     .dropdown-menu button {
       display: block;
       width: 100%;
-      padding: 8px 12px;
+      padding: 12px 16px;
       font-size: 16px;
+      color: #333;
       background-color: #f1f1f1;
       border: none;
       text-align: left;
@@ -52,11 +56,12 @@
       background-color: #ddd;
     }
 
+    /* Tab content styling */
     .tab-content {
-      display: none;
+      display: none; /* Hidden by default */
       padding: 20px;
       border: 1px solid #ccc;
-      border-top: none;
+      border-radius: 5px;
       width: 80%;
       margin-top: 20px;
     }
@@ -67,56 +72,59 @@
   </style>
 </head>
 <body>
+  <!-- Plant button that triggers dropdown -->
   <button class="plant-button" onclick="toggleDropdown()"></button>
 
+  <!-- Dropdown menu with options -->
   <div class="dropdown-menu" id="dropdownMenu">
-    <button onclick="openTab(event, 'Ethical')">Ethical Reasons</button>
-    <button onclick="openTab(event, 'Health')">Health Reasons</button>
-    <button onclick="openTab(event, 'Sustainability')">Sustainability Reasons</button>
-    <button onclick="openTab(event, 'Activism')">How to Become an Activist</button>
+    <button onclick="openTab('Ethical')">Ethical Reasons</button>
+    <button onclick="openTab('Health')">Health Reasons</button>
+    <button onclick="openTab('Sustainability')">Sustainability Reasons</button>
+    <button onclick="openTab('Activism')">How to Become an Activist</button>
   </div>
 
+  <!-- Tab content sections -->
   <div id="Ethical" class="tab-content">
     <h2>Ethical Reasons</h2>
-    <!-- Content here... -->
+    <p>Content about ethical reasons...</p>
   </div>
 
   <div id="Health" class="tab-content">
     <h2>Health Reasons</h2>
-    <!-- Content here... -->
+    <p>Content about health reasons...</p>
   </div>
 
   <div id="Sustainability" class="tab-content">
     <h2>Sustainability Reasons</h2>
-    <!-- Content here... -->
+    <p>Content about sustainability reasons...</p>
   </div>
 
   <div id="Activism" class="tab-content">
     <h2>How to Become an Activist</h2>
-    <p>Explore ways to support animal welfare and climate justice...</p>
+    <p>Content about activism...</p>
   </div>
 
   <script>
+    // Toggle dropdown visibility
     function toggleDropdown() {
       const dropdown = document.getElementById("dropdownMenu");
       dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
     }
 
-    function openTab(evt, tabName) {
-      // Close the dropdown
+    // Function to open a specific tab
+    function openTab(tabName) {
+      // Hide dropdown
       document.getElementById("dropdownMenu").style.display = "none";
 
-      // Hide all tab content
-      const tabContent = document.getElementsByClassName("tab-content");
-      for (let i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-      }
+      // Hide all tab contents
+      const tabContents = document.querySelectorAll(".tab-content");
+      tabContents.forEach(content => content.style.display = "none");
 
-      // Show the selected tab content
+      // Show the selected tab
       document.getElementById(tabName).style.display = "block";
     }
 
-    // Close dropdown when clicking outside of it
+    // Close the dropdown if user clicks outside
     document.addEventListener("click", function(event) {
       const dropdown = document.getElementById("dropdownMenu");
       const plantButton = document.querySelector(".plant-button");
@@ -124,11 +132,6 @@
       if (!dropdown.contains(event.target) && event.target !== plantButton) {
         dropdown.style.display = "none";
       }
-    });
-
-    // Show the first tab content by default
-    document.addEventListener("DOMContentLoaded", function() {
-      openTab(event, 'Ethical');
     });
   </script>
 </body>
