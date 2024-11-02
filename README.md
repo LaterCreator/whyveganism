@@ -10,10 +10,10 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Align at the top */
       min-height: 100vh;
       flex-direction: column;
-      overflow-x: hidden; /* Prevents horizontal overflow */
+      overflow-x: hidden;
     }
 
     /* Dropdown button styling */
@@ -35,7 +35,7 @@
 
     /* Dropdown menu styling */
     .dropdown-menu {
-      display: none; /* Hidden by default */
+      display: none;
       position: absolute;
       top: 50px;
       right: 20px;
@@ -63,24 +63,20 @@
       background-color: #ddd;
     }
 
-    /* Tab content styling */
+    /* Tab content styling with larger box */
     .tab-content {
-      display: none; /* Hidden by default */
+      display: none;
       padding: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      width: 80%;
+      width: 90%; /* Wider content area */
+      max-width: 800px; /* Max width for larger screens */
       margin-top: 20px;
       text-align: left;
     }
 
     .tab-content h2 {
       margin-top: 0;
-    }
-
-    /* Ensuring page starts at top */
-    html, body {
-      scroll-behavior: auto; /* Disable any scroll animation */
     }
   </style>
 </head>
@@ -106,16 +102,7 @@
 
   <div id="Ethics" class="tab-content">
     <h2>Ethics</h2>
-    <p>    
-    <h1>Dairy</h1>
-    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-        <iframe 
-            src="https://drive.google.com/file/d/1CBEONkl0h0BEoGLVi_Cq06dQssbLzvhM/preview" 
-            frameborder="0" 
-            allowfullscreen 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
-    </div></p>
+    <p>Content about ethical reasons for going vegan or plant-based.</p>
   </div>
 
   <div id="Health" class="tab-content">
