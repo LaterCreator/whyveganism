@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +11,7 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: flex-start; /* Align at the top */
+      align-items: flex-start;
       min-height: 100vh;
       flex-direction: column;
       overflow-x: hidden;
@@ -63,16 +64,15 @@
       background-color: #ddd;
     }
 
-    /* Tab content styling with larger box */
+    /* Tab content styling with responsive full width */
     .tab-content {
       display: none;
       padding: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
-      width: 90%; /* Wider content area */
-      max-width: 800px; /* Max width for larger screens */
+      width: 100%; /* Full width for all screens */
       margin-top: 20px;
-      text-align: left;
+      box-sizing: border-box; /* Includes padding and border in width */
     }
 
     .tab-content h2 {
