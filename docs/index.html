@@ -1,72 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Menu Interface</title>
+  <title>Your Title Here</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
+      margin: 0; /* Ensure no default margin is added */
     }
 
-    /* Dropdown button styling */
     .dropdown {
-      position: relative;
-      top: 20px;
-      right: 20px;
-      margin: 20px; /* Adds margin to the dropdown button */
+      position: absolute; /* Use absolute positioning */
+      top: 20px; /* Distance from the top */
+      right: 20px; /* Distance from the right */
+      z-index: 1000; /* Ensure it stays above other content */
     }
 
-    .dropdown-button {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+      padding-top: 60px; /* Space for the dropdown */
     }
 
-    /* Dropdown menu styling */
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 50px; /* Positioned below the button */
-      right: 0;
-      background-color: #f9f9f9;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    /* Dropdown items */
-    .dropdown-menu button {
-      width: 100%;
-      padding: 12px 16px;
-      font-size: 16px;
-      color: #333;
+    .tab-button {
       background-color: #f1f1f1;
       border: none;
-      text-align: left;
+      outline: none;
       cursor: pointer;
+      padding: 14px 16px;
       transition: background-color 0.3s;
+      font-size: 17px;
     }
 
-    .dropdown-menu button:hover {
+    .tab-button:hover {
       background-color: #ddd;
     }
 
-    /* Tab content styling with responsive full width */
+    .tab-button.active {
+      background-color: #ccc;
+    }
+
     .tab-content {
       display: none;
       padding: 20px;
-      margin-top: 0; /* No margin at the top */
-      width: 100%; /* Full width for all screens */
-      box-sizing: border-box; /* Includes padding and border in width */
+      border: 1px solid #ccc;
+      border-top: none;
+      max-width: 100%; /* Make sure it uses full width */
     }
 
     .tab-content h2 {
@@ -76,68 +55,71 @@
 </head>
 <body>
 
-  <!-- Dropdown menu button -->
   <div class="dropdown">
-    <button class="dropdown-button" onclick="toggleDropdown()">Menu</button>
-    <div class="dropdown-menu" id="dropdownMenu">
-      <button onclick="openTab('Home')">Home</button>
-      <button onclick="openTab('Ethics')">Ethics</button>
-      <button onclick="openTab('Health')">Health</button>
-      <button onclick="openTab('Sustainability')">Sustainability</button>
-      <button onclick="openTab('Activism')">How to Activism</button>
-    </div>
+    <select id="dropdown" onchange="location = this.value;">
+      <option value="">Select a page...</option>
+      <option value="#home">Home</option>
+      <option value="#ethics">Ethics</option>
+      <option value="#health">Health</option>
+      <option value="#sustainability">Sustainability</option>
+      <option value="#activism">How to Activism</option>
+    </select>
   </div>
 
-  <!-- Tab content sections -->
-  <div id="Home" class="tab-content">
+  <div class="tabs">
+    <button class="tab-button" onclick="openTab(event, 'home')">Home</button>
+    <button class="tab-button" onclick="openTab(event, 'ethics')">Ethics</button>
+    <button class="tab-button" onclick="openTab(event, 'health')">Health</button>
+    <button class="tab-button" onclick="openTab(event, 'sustainability')">Sustainability</button>
+    <button class="tab-button" onclick="openTab(event, 'activism')">How to Activism</button>
+  </div>
+
+  <div id="home" class="tab-content">
     <h2>Home</h2>
-    <p>Welcome to the home section. This is the main overview of the site.</p>
+    <!-- Home content here -->
   </div>
 
-  <div id="Ethics" class="tab-content">
+  <div id="ethics" class="tab-content">
     <h2>Ethics</h2>
-    <p>Content about ethical reasons for going vegan or plant-based.</p>
+    <!-- Ethics content here -->
   </div>
 
-  <div id="Health" class="tab-content">
+  <div id="health" class="tab-content">
     <h2>Health</h2>
-    <p>Health benefits of adopting a vegan or plant-based lifestyle.</p>
+    <!-- Health content here -->
   </div>
 
-  <div id="Sustainability" class="tab-content">
+  <div id="sustainability" class="tab-content">
     <h2>Sustainability</h2>
-    <p>Information on sustainability and environmental impact of plant-based diets.</p>
+    <!-- Sustainability content here -->
   </div>
 
-  <div id="Activism" class="tab-content">
+  <div id="activism" class="tab-content">
     <h2>How to Activism</h2>
-    <p>Ways to get involved in activism for the plant-based and vegan movement.</p>
+    <!-- Activism content here -->
   </div>
 
   <script>
-    // Toggle dropdown visibility
-    function toggleDropdown() {
-      const dropdown = document.getElementById("dropdownMenu");
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    function openTab(evt, tabName) {
+      var i, tabcontent, tabbuttons;
+
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none"; // Hide all tab contents
+      }
+
+      tabbuttons = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tabbuttons.length; i++) {
+        tabbuttons[i].className = tabbuttons[i].className.replace(" active", ""); // Remove active class
+      }
+
+      document.getElementById(tabName).style.display = "block"; // Show the current tab
+      evt.currentTarget.className += " active"; // Add active class to the clicked button
     }
 
-    // Function to open a specific tab
-    function openTab(tabName) {
-      // Hide dropdown
-      document.getElementById("dropdownMenu").style.display = "none";
-
-      // Hide all tab contents
-      const tabContents = document.querySelectorAll(".tab-content");
-      tabContents.forEach(content => content.style.display = "none");
-
-      // Show the selected tab
-      document.getElementById(tabName).style.display = "block";
-    }
-
-    // Display the "Home" tab by default on page load
+    // Simulate a click on the first tab button to display the first tab by default
     document.addEventListener("DOMContentLoaded", function() {
-      openTab("Home");
-      window.scrollTo(0, 0); // Ensures page loads at the top
+      document.querySelector(".tab-button").click();
     });
   </script>
 </body>
