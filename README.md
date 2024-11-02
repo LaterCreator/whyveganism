@@ -14,6 +14,7 @@
       align-items: center;
       min-height: 100vh;
       flex-direction: column;
+      overflow-x: hidden; /* Prevents horizontal overflow */
     }
 
     /* Dropdown button styling */
@@ -77,6 +78,11 @@
     .tab-content h2 {
       margin-top: 0;
     }
+
+    /* Ensuring page starts at top */
+    html, body {
+      scroll-behavior: auto; /* Disable any scroll animation */
+    }
   </style>
 </head>
 <body>
@@ -139,14 +145,10 @@
       document.getElementById(tabName).style.display = "block";
     }
 
-    // Close the dropdown if the user clicks outside
-    document.addEventListener("click", function(event) {
-      const dropdown = document.getElementById("dropdownMenu");
-      const dropdownButton = document.querySelector(".dropdown-button");
-
-      if (!dropdown.contains(event.target) && event.target !== dropdownButton) {
-        dropdown.style.display = "none";
-      }
+    // Display the "Home" tab by default on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      openTab("Home");
+      window.scrollTo(0, 0); // Ensures page loads at the top
     });
   </script>
 </body>
