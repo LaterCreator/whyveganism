@@ -106,7 +106,16 @@
 
   <div id="Ethics" class="tab-content">
     <h2>Ethics</h2>
-    <p>Content about ethical reasons for going vegan or plant-based.</p>
+    <p>    
+    <h1>Dairy</h1>
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+        <iframe 
+            src="https://drive.google.com/file/d/1CBEONkl0h0BEoGLVi_Cq06dQssbLzvhM/preview" 
+            frameborder="0" 
+            allowfullscreen 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div></p>
   </div>
 
   <div id="Health" class="tab-content">
