@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,9 +14,10 @@
 
     /* Dropdown button styling */
     .dropdown {
-      position: absolute;
+      position: relative;
       top: 20px;
       right: 20px;
+      margin: 20px; /* Adds margin to the dropdown button */
     }
 
     .dropdown-button {
@@ -32,8 +34,8 @@
     .dropdown-menu {
       display: none;
       position: absolute;
-      top: 50px;
-      right: 20px;
+      top: 50px; /* Positioned below the button */
+      right: 0;
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
@@ -62,7 +64,7 @@
     .tab-content {
       display: none;
       padding: 20px;
-      margin-top: 60px; /* Space below the dropdown */
+      margin-top: 0; /* No margin at the top */
       width: 100%; /* Full width for all screens */
       box-sizing: border-box; /* Includes padding and border in width */
     }
@@ -140,4 +142,3 @@
   </script>
 </body>
 </html>
-
