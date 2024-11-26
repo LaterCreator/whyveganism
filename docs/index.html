@@ -39,7 +39,7 @@
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       overflow: hidden;
-      z-index: 101; /* Ensures dropdown stays on top */
+      z-index: 1;
     }
 
     /* Dropdown items */
@@ -75,15 +75,14 @@
     /* Under-tab styling */
     .under-tab {
       display: none;
-      position: absolute; /* Positioned under "My Reflections" */
-      top: 100%; /* Make sure it appears below "My Reflections" */
+      position: absolute;
+      top: 100%; /* Positioned directly below My Reflections button */
       left: 0;
       width: 100%;
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      overflow: hidden;
-      z-index: 102; /* Ensure it's above all content */
+      z-index: 1;
     }
 
     .under-tab button {
@@ -98,6 +97,11 @@
 
     .under-tab button:hover {
       background-color: #ddd;
+    }
+
+    /* Ensure that the My Reflections button and under-tabs don't overlap */
+    .under-tab-container {
+      position: relative;
     }
   </style>
 </head>
@@ -116,17 +120,19 @@
     </div>
   </div>
 
-  <!-- Under-tab for My Reflections -->
-  <div id="MyReflections" class="under-tab">
-    <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
-    <button onclick="openTab('Feminism')">Feminism</button>
+  <!-- Under-tab container for My Reflections -->
+  <div class="under-tab-container" style="position: relative;">
+    <div id="MyReflections" class="under-tab">
+      <!-- Buttons for Cognitive Dissonance and Feminism tabs -->
+      <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
+      <button onclick="openTab('Feminism')">Feminism</button>
+    </div>
   </div>
 
   <!-- Tab content sections -->
   <div id="Home" class="tab-content">
     <h2>Home</h2>
-    <p><h1>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core</h1>
-</p>
+    <p>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core</p>
   </div>
 
   <div id="Ethics" class="tab-content">
@@ -169,13 +175,6 @@
     // Toggle under-tab visibility for "My Reflections"
     function toggleUnderTab(tabName) {
       const underTab = document.getElementById(tabName);
-      const button = document.querySelector("button[onclick='toggleUnderTab(\"MyReflections\")']");
-      const buttonRect = button.getBoundingClientRect();
-
-      // Adjust position of under-tab directly below the "My Reflections" button
-      underTab.style.left = "0"; // Align left with the dropdown menu
-      underTab.style.top = (buttonRect.top + buttonRect.height) + "px"; // Position under the button
-
       underTab.style.display = underTab.style.display === "block" ? "none" : "block";
     }
 
