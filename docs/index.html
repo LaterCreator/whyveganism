@@ -75,10 +75,7 @@
     /* Under-tab styling */
     .under-tab {
       display: none;
-      position: absolute; /* Positioned below the "My Reflections" tab */
-      top: 90px; /* Adjusted to drop below */
-      left: 0;
-      width: 100%;
+      position: absolute; /* Positioned below the "My Reflections" button */
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
@@ -126,15 +123,7 @@
   <div id="Home" class="tab-content">
     <h2>Home</h2>
     <p><h1>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core</h1>
-    <h2>Why western people aren't changing their ways when confronted with this:</h2>
-    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-      <iframe 
-        src="https://drive.google.com/file/d/1I03NGKIt_J-hwz6lddpT0HQk0hNFN6hy/preview" 
-        frameborder="0" 
-        allowfullscreen 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      </iframe>
-    </div>
+</p>
   </div>
 
   <div id="Ethics" class="tab-content">
@@ -177,6 +166,13 @@
     // Toggle under-tab visibility for "My Reflections"
     function toggleUnderTab(tabName) {
       const underTab = document.getElementById(tabName);
+      const button = document.querySelector("button[onclick='toggleUnderTab(\"MyReflections\")']");
+      const buttonRect = button.getBoundingClientRect();
+      
+      // Adjust position of under-tab below the button
+      underTab.style.left = buttonRect.left + "px";
+      underTab.style.top = (buttonRect.top + buttonRect.height) + "px";
+
       underTab.style.display = underTab.style.display === "block" ? "none" : "block";
     }
 
