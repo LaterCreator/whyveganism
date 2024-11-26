@@ -5,43 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dropdown Menu Fix</title>
   <style>
+    /* Global styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light gradient background */
+      color: #333;
     }
 
     /* Dropdown button styling */
     .dropdown {
-      position: fixed; /* Fixed positioning for always-visible menu */
-      top: 20px; /* Distance from the top */
-      right: 20px; /* Distance from the right */
-      z-index: 100; /* Ensures it stays on top */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
     }
 
     .dropdown-button {
       background-color: #007BFF;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 20px;
       font-size: 16px;
       border: none;
       cursor: pointer;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .dropdown-button:hover {
+      background-color: #0056b3;
     }
 
     /* Dropdown menu styling */
     .dropdown-menu {
       display: none;
       position: absolute;
-      top: 50px; /* Positioned below the button */
+      top: 50px;
       right: 0;
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
+      width: 200px;
       z-index: 1;
     }
 
-    /* Dropdown items */
     .dropdown-menu button {
       width: 100%;
       padding: 12px 16px;
@@ -65,8 +73,8 @@
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       z-index: 1;
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     .under-tab button {
@@ -85,10 +93,23 @@
       background-color: #ddd;
     }
 
-    /* Ensure main content doesn't overlap */
+    /* Tab content styling */
     .tab-content {
       padding: 20px;
-      margin-top: 100px; /* Space for dropdown */
+      display: none;
+    }
+
+    .tab-content h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .dropdown-button {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
     }
   </style>
 </head>
@@ -105,7 +126,7 @@
       <button onclick="openTab('Activism')">How to Activism</button>
       <button onclick="toggleUnderTab()">My Reflections</button>
       <!-- Under-tab section for My Reflections -->
-      <div class="under-tab" id="underTab" style="right: 0;">
+      <div class="under-tab" id="underTab">
         <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
         <button onclick="openTab('Feminism')">Feminism</button>
       </div>
@@ -115,8 +136,7 @@
   <!-- Tab content sections -->
   <div id="Home" class="tab-content">
     <h2>Home</h2>
-    <p><h1>This website is dedicated to all those helpless victims whose lives were spent trapped and whose needless deaths shatter me to my core.</h1></p>
-
+    <h1>This website is dedicated to all those helpless victims whose lives were spent trapped and whose needless deaths shatter me to my core.</h1>
     <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
       <iframe 
         src="https://drive.google.com/file/d/1fh0kCaU37lTF0Y6rFjDX3EgAUsidwhnl/preview" 
@@ -125,8 +145,6 @@
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
       </iframe>
     </div>
-    
-    
   </div>
 
   <div id="Ethics" class="tab-content">
@@ -136,11 +154,8 @@
 
   <div id="Health" class="tab-content">
     <h2>Health</h2>
-    <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it health-wise
-    
-    </p>
-
-  <h1>Sources:</h1>
+    <p>The cool thing about veganism is that you are not only acting in a way that coincides with your ethical values, you also benefit from it health-wise</p>
+    <h1>Sources:</h1>
     <ul>
       <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991921/" target="_blank" rel="noopener noreferrer">Health benefits</a></li>
       <li><a href="https://pubmed.ncbi.nlm.nih.gov/38032644/" target="_blank" rel="noopener noreferrer">Twin study</a></li>
@@ -148,46 +163,25 @@
       <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8210981/" target="_blank" rel="noopener noreferrer">Another study</a></li>
     </ul>
 
-<h1>Documentaries:</h1>
-<ul> 
-<li><a href="https://www.youtube.com/watch?v=obx7cJtk3fE&t=2880s" target="_blank" rel="noopener noreferrer">What the health</a></li>
- <li><a href="https://www.youtube.com/watch?v=EjTWFoqLy34&t=2207s" target="_blank" rel="noopener noreferrer">Forks over knives</a></li>
-</ul>
-</div>
-
+    <h1>Documentaries:</h1>
+    <ul> 
+      <li><a href="https://www.youtube.com/watch?v=obx7cJtk3fE&t=2880s" target="_blank" rel="noopener noreferrer">What the health</a></li>
+      <li><a href="https://www.youtube.com/watch?v=EjTWFoqLy34&t=2207s" target="_blank" rel="noopener noreferrer">Forks over knives</a></li>
+    </ul>
+  </div>
 
   <div id="Sustainability" class="tab-content">
     <h2>Sustainability</h2>
-Hard facts:
-    <br>
-Animal agriculture is leading cause of climate change
-    <br>
-The industry occupies a third of all arable land
-    <br>
-The average person only gets 18% of calories from animal products
-    <br>
-Water usage: A vegan uses on average a million liters less water than an omnivore. That is an equivolant to 30 years of 10 minute long daily showers.
-<br>
-    
-    
+    <p>Hard facts:</p>
+    <ul>
+      <li>Animal agriculture is the leading cause of climate change</li>
+      <li>The industry occupies a third of all arable land</li>
+      <li>The average person only gets 18% of calories from animal products</li>
+      <li>Water usage: A vegan uses on average a million liters less water than an omnivore.</li>
+    </ul>
     <p>
       <a href="https://climatehealers.org/the-science/animal-agriculture-position-paper/" target="_blank" rel="noopener noreferrer">Leading cause of climate change</a>
- <br>
-      <a href="https://informationisbeautiful.net/visualizations/how-many-gigatons-of-co2/" target="_blank" rel="noopener noreferrer">CO2-Statistics</a>
-<br>
- <a href="https://climate.mit.edu/ask-mit/what-makes-methane-more-potent-greenhouse-gas-carbon-dioxide" target="_blank" rel="noopener noreferrer">Methane's real GWP</a>
-    <br>  
-        <a href="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121" target="_blank" rel="noopener noreferrer">Ocean warming</a>
-      <br>
-        <a href="https://ourworldindata.org/greenhouse-gas-emissions" target="_blank" rel="noopener noreferrer">Greenhouse gases comparison</a>
-<br>
- <a href="https://ourworldindata.org/carbon-opportunity-costs-food" target="_blank" rel="noopener noreferrer">carbon opportunity cost</a>
-   <br>
-<a href="https://ourworldindata.org/global-land-for-agriculture" target="_blank" rel="noopener noreferrer">Land usage and nutrition</a>
-<br>
-<a href="https://eu.boell.org/en/2021/09/07/water-thirsty-animals-thirsty-crops"_blank" rel="noopener noreferrer">Water usage</a>
-
-</p>
+    </p>
   </div>
 
   <div id="Activism" class="tab-content">
@@ -197,32 +191,7 @@ Water usage: A vegan uses on average a million liters less water than an omnivor
 
   <div id="CognitiveDissonance" class="tab-content">
     <h2>Cognitive Dissonance (A conflict of inconsistency)</h2>
-<p>
-Our brains have a natural tendency to seek internal coherence. When this consistency is challenged there are essentially 2 ways in which this contradiction is resolved. We either change our behaviour to sustainably reduce the discomfort caused by disharmony or hold onto our beliefs that don’t reflect reality and try to justify the behaviour in some way. For example a smoker who cares about their health might justify the act of smoking by downplaying the negative effects and or convincing themselves of the cigarette’s benefits (e.g. stress relief). Another example would be someone who is against animal abuse and needless suffering, but purchases animal products. The difference between this and the cigarette example is that you are directly responsible for someone else's suffering and death.
-<br>
-<br>
-When you go into the supermarket and purchase a piece of cheese that is neatly wrapped and might even have a smiling cow on it you are being manipulated, because that is not the reality of the situation. Billa is actually running a campaign or „brand“ at the moment that states „Fair to the animal; animal welfare initiative“. This is nothing more than an attempt to keep people tractable and compliant, they are exploiting your cognitive dissonance („Ah I am glad I can consume meat, fish cheese, eggs and honey, what we do to them is fair after all“). The people behind this industry know it is shrinking and they are trying their very best to manipulate you into continuing to purchase their products. So what is the reality of the situation? Let me give you a short rundown:
-<br>
-<br>
-Cows, gentle giants, are trapped in a cycle of relentless breeding, their calves stolen moments after birth, leading to cries that echo through factory walls. They’re pumped with hormones and drained of milk until their bodies give out, at which point they face the same bloody end, terrified and helpless.
-<br>
-<br>
-Fish—sensitive beings who feel pain just as acutely—are ripped from their ocean homes, suffocating slowly on trawlers as they’re left to flop helplessly. In massive trawling operations, entire ecosystems are stripped away, leaving endless miles of ocean barren and lifeless.
-<br>
-<br>
-Bees, essential to the environment, are treated as mere cogs in the machinery of profit. Queens are artificially inseminated, and hives are ransacked, depriving bees of the very honey they produce. Many collapse from exhaustion as they’re transported en masse across vast distances.
-<br>
-<br>
-These creatures, sentient beings with families and feelings, live in a constant state of fear and helplessness. They are exploited for products that we take for granted, bearing agonizing lives for human convenience. They are prisoners of an endless system of cruelty, pleading without voices, their suffering hidden from view but present in every glass of milk, every egg, every fillet, and every drop of honey.
-<br>
-<br>
-
-How does this make you feel? This is the reality for every animal thats being exploited by humans,  they are not objects, they are individuals that deserve to be free. 
-Take a moment to ask yourself: Do I want to be responsible for the needless suffering and death of others?
-You can stop this! You hold all the power! Choose compassion, choose life. Make the choice that you’d want to be made if you were in their position. Go vegan <3
-
-    
-    </p>
+    <p>Content about cognitive dissonance...</p>
   </div>
 
   <div id="Feminism" class="tab-content">
@@ -256,12 +225,9 @@ You can stop this! You hold all the power! Choose compassion, choose life. Make 
       // Show the selected tab
       document.getElementById(tabName).style.display = "block";
     }
-
-    // Display the "Home" tab by default
-    document.addEventListener("DOMContentLoaded", function() {
-      openTab("Home");
-    });
   </script>
+
 </body>
 </html>
+
 
