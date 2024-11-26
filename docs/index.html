@@ -75,7 +75,10 @@
     /* Under-tab styling */
     .under-tab {
       display: none;
-      position: absolute; /* Positioned below the "My Reflections" button */
+      position: absolute; /* Positioned under "My Reflections" */
+      top: 100%; /* Make sure it appears below "My Reflections" */
+      left: 0;
+      width: 100%;
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
@@ -168,10 +171,10 @@
       const underTab = document.getElementById(tabName);
       const button = document.querySelector("button[onclick='toggleUnderTab(\"MyReflections\")']");
       const buttonRect = button.getBoundingClientRect();
-      
-      // Adjust position of under-tab below the button
-      underTab.style.left = buttonRect.left + "px";
-      underTab.style.top = (buttonRect.top + buttonRect.height + window.scrollY) + "px"; // Add window scrollY to account for scrolling
+
+      // Adjust position of under-tab directly below the "My Reflections" button
+      underTab.style.left = "0"; // Align left with the dropdown menu
+      underTab.style.top = (buttonRect.top + buttonRect.height) + "px"; // Position under the button
 
       underTab.style.display = underTab.style.display === "block" ? "none" : "block";
     }
