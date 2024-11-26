@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -71,6 +70,26 @@
     .tab-content h2 {
       margin-top: 0;
     }
+
+    /* Under-tab styling */
+    .under-tab {
+      display: none;
+      padding-left: 20px;
+    }
+
+    .under-tab button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .under-tab button:hover {
+      background-color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -84,7 +103,14 @@
       <button onclick="openTab('Health')">Health</button>
       <button onclick="openTab('Sustainability')">Sustainability</button>
       <button onclick="openTab('Activism')">How to Activism</button>
+      <button onclick="toggleUnderTab('MyReflections')">My Reflections</button>
     </div>
+  </div>
+
+  <!-- Under-tab for My Reflections -->
+  <div id="MyReflections" class="under-tab">
+    <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
+    <button onclick="openTab('Feminism')">Feminism</button>
   </div>
 
   <!-- Tab content sections -->
@@ -92,44 +118,14 @@
     <h2>Home</h2>
     <p><h1>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core</h1>
     <h2>Why western people aren't changing their ways when confronted with this:</h2>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-        <iframe 
-            src="https://drive.google.com/file/d/1I03NGKIt_J-hwz6lddpT0HQk0hNFN6hy/preview" 
-            frameborder="0" 
-            allowfullscreen 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+      <iframe 
+        src="https://drive.google.com/file/d/1I03NGKIt_J-hwz6lddpT0HQk0hNFN6hy/preview" 
+        frameborder="0" 
+        allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
     </div>
-
-
-
-<h2>Cognitive Dissonance (A conflict of inconsistency)</h2>
-
-Our brains have a natural tendency to seek internal coherence. When this consistency is challenged there are essentially 2 ways in which this contradiction is resolved. We either change our behaviour to sustainably reduce the discomfort caused by disharmony or hold onto our beliefs that don’t reflect reality and try to justify the behaviour in some way. For example a smoker who cares about their health might justify the act of smoking by downplaying the negative effects and or convincing themselves of the cigarette’s benefits (e.g. stress relief). Another example would be someone who is against animal abuse and needless suffering, but purchases animal products. The difference between this and the cigarette example is that you are directly responsible for someones suffering and death.
-<br>
-<br>
-When you go into the supermarket and purchase a piece of cheese that is neatly wrapped and might even have a smiling cow on it you are being manipulated, because that is not the reality of the situation. Billa is actually running a campaign or „brand“ at the moment that states „Fair to the animal; animal welfare initiative“. This is nothing more than an attempt to keep people tractable and compliant, they are exploiting your cognitive dissonance („Ah I am glad I can consume meat, fish cheese, eggs and honey, what we do to them is fair after all“). The people behind this industry know it is shrinking and they are trying their very best to manipulate you into continuing to purchase their products. So what is the reality of the situation? Let me give you a short rundown:
-<br>
-<br>
-Cows, gentle giants, are trapped in a cycle of relentless breeding, their calves stolen moments after birth, leading to cries that echo through factory walls. They’re pumped with hormones and drained of milk until their bodies give out, at which point they face the same bloody end, terrified and helpless.
-<br>
-<br>
-Fish—sensitive beings who feel pain just as acutely—are ripped from their ocean homes, suffocating slowly on trawlers as they’re left to flop helplessly. In massive trawling operations, entire ecosystems are stripped away, leaving endless miles of ocean barren and lifeless.
-<br>
-<br>
-Bees, essential to the environment, are treated as mere cogs in the machinery of profit. Queens are artificially inseminated, and hives are ransacked, depriving bees of the very honey they produce. Many collapse from exhaustion as they’re transported en masse across vast distances.
-<br>
-<br>
-These creatures, sentient beings with families and feelings, live in a constant state of fear and helplessness. They are exploited for products that we take for granted, bearing agonizing lives for human convenience. They are prisoners of an endless system of cruelty, pleading without voices, their suffering hidden from view but present in every glass of milk, every egg, every fillet, and every drop of honey.
-<br>
-<br>
-
-How does this make you feel? This is the reality for every animal thats being exploited by humans,  they are not objects, they are individuals that deserve to be free. 
-Take a moment to ask yourself: Do I want to be responsible for the needless suffering and death of others?
-You can stop this! You hold all the power! Choose compassion, choose life. Make the choice that you’d want to be made if you were in their position. Go vegan <3
-
-    
-    </p>
   </div>
 
   <div id="Ethics" class="tab-content">
@@ -152,11 +148,27 @@ You can stop this! You hold all the power! Choose compassion, choose life. Make 
     <p>Ways to get involved in activism for the plant-based and vegan movement.</p>
   </div>
 
+  <div id="CognitiveDissonance" class="tab-content">
+    <h2>Cognitive Dissonance</h2>
+    <p>Content about cognitive dissonance.</p>
+  </div>
+
+  <div id="Feminism" class="tab-content">
+    <h2>Feminism</h2>
+    <p>Content about feminism.</p>
+  </div>
+
   <script>
     // Toggle dropdown visibility
     function toggleDropdown() {
       const dropdown = document.getElementById("dropdownMenu");
       dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Toggle under-tab visibility for "My Reflections"
+    function toggleUnderTab(tabName) {
+      const underTab = document.getElementById(tabName);
+      underTab.style.display = underTab.style.display === "block" ? "none" : "block";
     }
 
     // Function to open a specific tab
@@ -167,6 +179,10 @@ You can stop this! You hold all the power! Choose compassion, choose life. Make 
       // Hide all tab contents
       const tabContents = document.querySelectorAll(".tab-content");
       tabContents.forEach(content => content.style.display = "none");
+
+      // Hide under-tab contents
+      const underTabs = document.querySelectorAll(".under-tab");
+      underTabs.forEach(underTab => underTab.style.display = "none");
 
       // Show the selected tab
       document.getElementById(tabName).style.display = "block";
