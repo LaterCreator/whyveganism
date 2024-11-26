@@ -1,19 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Menu Interface</title>
+  <title>Dropdown Menu Fix</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      min-height: 100vh;
     }
 
     /* Dropdown button styling */
     .dropdown {
-      position: fixed; /* Fixed positioning to stay at top-right when scrolling */
+      position: fixed; /* Fixed positioning for always-visible menu */
       top: 20px; /* Distance from the top */
       right: 20px; /* Distance from the right */
       z-index: 100; /* Ensures it stays on top */
@@ -38,7 +38,6 @@
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      overflow: hidden;
       z-index: 1;
     }
 
@@ -59,35 +58,22 @@
       background-color: #ddd;
     }
 
-    /* Tab content styling with responsive full width */
-    .tab-content {
-      display: none;
-      padding: 20px;
-      margin-top: 80px; /* Space for the dropdown */
-      width: 100%; /* Full width for all screens */
-      box-sizing: border-box; /* Includes padding and border in width */
-    }
-
-    .tab-content h2 {
-      margin-top: 0;
-    }
-
     /* Under-tab styling */
     .under-tab {
       display: none;
       position: absolute;
-      top: 100%; /* Positioned directly below My Reflections button */
-      left: 0;
-      width: 100%;
       background-color: #f9f9f9;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
       z-index: 1;
+      padding: 0;
+      margin: 0;
     }
 
     .under-tab button {
       width: 100%;
-      padding: 10px;
+      padding: 12px 16px;
+      font-size: 16px;
+      color: #333;
       background-color: #f1f1f1;
       border: none;
       text-align: left;
@@ -99,9 +85,10 @@
       background-color: #ddd;
     }
 
-    /* Ensure that the My Reflections button and under-tabs don't overlap */
-    .under-tab-container {
-      position: relative;
+    /* Ensure main content doesn't overlap */
+    .tab-content {
+      padding: 20px;
+      margin-top: 100px; /* Space for dropdown */
     }
   </style>
 </head>
@@ -116,23 +103,19 @@
       <button onclick="openTab('Health')">Health</button>
       <button onclick="openTab('Sustainability')">Sustainability</button>
       <button onclick="openTab('Activism')">How to Activism</button>
-      <button onclick="toggleUnderTab('MyReflections')">My Reflections</button>
-    </div>
-  </div>
-
-  <!-- Under-tab container for My Reflections -->
-  <div class="under-tab-container" style="position: relative;">
-    <div id="MyReflections" class="under-tab">
-      <!-- Buttons for Cognitive Dissonance and Feminism tabs -->
-      <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
-      <button onclick="openTab('Feminism')">Feminism</button>
+      <button onclick="toggleUnderTab()">My Reflections</button>
+      <!-- Under-tab section for My Reflections -->
+      <div class="under-tab" id="underTab" style="right: 0;">
+        <button onclick="openTab('CognitiveDissonance')">Cognitive Dissonance</button>
+        <button onclick="openTab('Feminism')">Feminism</button>
+      </div>
     </div>
   </div>
 
   <!-- Tab content sections -->
   <div id="Home" class="tab-content">
     <h2>Home</h2>
-    <p>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core</p>
+    <p>This website is dedicated to all those victims whose lives were spent trapped and whose needless deaths shatter me to my core.</p>
   </div>
 
   <div id="Ethics" class="tab-content">
@@ -166,40 +149,37 @@
   </div>
 
   <script>
-    // Toggle dropdown visibility
+    // Toggle main dropdown menu
     function toggleDropdown() {
-      const dropdown = document.getElementById("dropdownMenu");
-      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+      const menu = document.getElementById("dropdownMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
 
-    // Toggle under-tab visibility for "My Reflections"
-    function toggleUnderTab(tabName) {
-      const underTab = document.getElementById(tabName);
+    // Toggle under-tab visibility
+    function toggleUnderTab() {
+      const underTab = document.getElementById("underTab");
       underTab.style.display = underTab.style.display === "block" ? "none" : "block";
     }
 
-    // Function to open a specific tab
+    // Open specific tab
     function openTab(tabName) {
-      // Hide dropdown
-      document.getElementById("dropdownMenu").style.display = "none";
-
       // Hide all tab contents
       const tabContents = document.querySelectorAll(".tab-content");
       tabContents.forEach(content => content.style.display = "none");
 
-      // Hide under-tab contents
-      const underTabs = document.querySelectorAll(".under-tab");
-      underTabs.forEach(underTab => underTab.style.display = "none");
+      // Hide dropdowns
+      document.getElementById("dropdownMenu").style.display = "none";
+      document.getElementById("underTab").style.display = "none";
 
       // Show the selected tab
       document.getElementById(tabName).style.display = "block";
     }
 
-    // Display the "Home" tab by default on page load
+    // Display the "Home" tab by default
     document.addEventListener("DOMContentLoaded", function() {
       openTab("Home");
-      window.scrollTo(0, 0); // Ensures page loads at the top
     });
   </script>
 </body>
 </html>
+
