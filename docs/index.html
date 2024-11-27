@@ -174,7 +174,7 @@
     <h2>Sustainability</h2>
  <p>Hard facts:
     <br>
-Animal agriculture is leading cause of climate change
+Animal agriculture is the leading cause of climate change
     <br>
 The industry occupies a third of all arable land
     <br>
@@ -246,35 +246,39 @@ You can stop this! You hold all the power! Choose compassion, choose life. Make 
     <p>Content about feminism.</p>
   </div>
 
-  <script>
-    // Toggle main dropdown menu
-    function toggleDropdown() {
-      const menu = document.getElementById("dropdownMenu");
-      menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
+<script>
+  // Toggle main dropdown menu
+  function toggleDropdown() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
 
-    // Toggle under-tab visibility
-    function toggleUnderTab() {
-      const underTab = document.getElementById("underTab");
-      underTab.style.display = underTab.style.display === "block" ? "none" : "block";
-    }
+  // Toggle under-tab visibility
+  function toggleUnderTab() {
+    const underTab = document.getElementById("underTab");
+    underTab.style.display = underTab.style.display === "block" ? "none" : "block";
+  }
 
-    // Open specific tab
-    function openTab(tabName) {
-      // Hide all tab contents
-      const tabContents = document.querySelectorAll(".tab-content");
-      tabContents.forEach(content => content.style.display = "none");
+  // Open specific tab
+  function openTab(tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll(".tab-content");
+    tabContents.forEach(content => content.style.display = "none");
 
-      // Hide dropdowns
-      document.getElementById("dropdownMenu").style.display = "none";
-      document.getElementById("underTab").style.display = "none";
+    // Hide dropdowns
+    document.getElementById("dropdownMenu").style.display = "none";
+    document.getElementById("underTab").style.display = "none";
 
-      // Show the selected tab
-      document.getElementById(tabName).style.display = "block";
-    }
-  </script>
+    // Show the selected tab
+    document.getElementById(tabName).style.display = "block";
+  }
+
+  // Open Home tab by default on page load
+  window.onload = function() {
+    openTab('Home');
+  };
+</script>
+
 
 </body>
 </html>
-
-
