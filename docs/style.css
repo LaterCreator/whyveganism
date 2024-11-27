@@ -8,6 +8,22 @@
   border-radius: 8px; /* Optional: Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
 }
+
+/* Media Query for smaller screens (e.g., mobile) */
+@media (max-width: 600px) {
+  .image-class {
+    max-width: 100%; /* Allow the image to fill the container on smaller screens */
+    margin: 10px auto; /* Reduce margin */
+  }
+}
+
+/* Media Query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 601px) {
+  .image-class {
+    max-width: 80%; /* Allow the image to be smaller on larger screens */
+  }
+}
+
     /* Global styles */
  body {
     background: url('https://github.com/LaterCreator/whyveganism/blob/main/Background%20_%20beautiful%20_%20forest%20_%20rain_%20green%20_%20trees%20_%20nature.jpeg?raw=true') no-repeat center center fixed;
